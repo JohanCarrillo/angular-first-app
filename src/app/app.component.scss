@@ -1,0 +1,40 @@
+body {
+  padding: 10%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.container {
+  border-radius: 25px;
+  padding: 5%;
+  border: solid 3px red;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+  #button-container {
+    text-align: end;
+
+    button {
+      color: white;
+      border: solid 2px darkblue;
+      font-family: inherit;
+      border-radius: 15px;
+      height: 8vh;
+      width: 30%;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    font-size: 1.1rem;
+    #button-container {
+      button {
+        width: 50%;
+        font-size: 1rem;
+      }
+    }
+  }
+}
